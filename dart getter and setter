@@ -1,0 +1,20 @@
+void main() {
+  var studnet1 = Student();
+  studnet1.name = 'Jony';
+  print(studnet1.name);
+  studnet1.percentage = 400.0;
+  print(studnet1.percentage);
+}
+
+class Student {
+  String name = "ab";
+  int rollNumber = -1;
+  double _percent = 35;
+  set percentage(double marks) {
+    _percent = (marks / 500) * 100;
+  }
+
+  double get percentage {
+    return _percent;
+  }
+}
